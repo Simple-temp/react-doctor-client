@@ -1,0 +1,30 @@
+.patinetsBox
+{
+    box-shadow: 0px 1px 7px -3px #000;
+    padding:20px;
+    margin:13px;
+}
+.patientBody
+{
+    padding-bottom:30px;
+}
+.footer
+{
+    padding:13px 10px;
+}
+.p-info
+{
+    margin-left:30px;
+}
+.p-info p 
+{
+    color:#1CC7C1;
+    font-weight:bold;
+}
+.p-info span 
+{
+    color:gray;
+}
+p{
+    margin-bottom: 0rem;
+}

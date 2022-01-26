@@ -1,0 +1,25 @@
+footer
+{
+    background-image: url(../../../img/footer-bg.png);
+    height:65vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+footer ul 
+{
+    list-style:none;
+}
+footer ul li 
+{
+    line-height:70px;
+    font-weight:600;
+    color:gray;
+    font-size:13px;
+}
+footer h6 
+{
+    color:#1CC7C1;
+    font-weight:bold;
+}

@@ -1,0 +1,10 @@
+.patientInfo h4 
+{
+    color:#1CC7C1;
+    text-transform: uppercase;
+}
+.patientInfo .testimonial-p
+{
+    font-weight: 600;
+    font-size:30px;
+}

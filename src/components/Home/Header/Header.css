@@ -1,0 +1,21 @@
+.header
+{
+    position: relative;
+    height:100vh;
+    background-image: url("../../../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.header::after
+{
+    position: absolute;
+    content:"";
+    top:0;
+    right:0;
+    background-color: #3A4256;
+    height:100vh;
+    width:30%;
+    z-index: -11111;
+}
+/* 1CC7C1 */

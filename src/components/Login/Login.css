@@ -1,0 +1,11 @@
+.loginInput
+{
+    padding:14px 12px;
+    margin-top:15px;
+    border-width: 0 0 2px;
+    border-color: #1CC7C1;
+}
+.loginInput:focus
+{
+    border-color: #1c6cc7;
+}

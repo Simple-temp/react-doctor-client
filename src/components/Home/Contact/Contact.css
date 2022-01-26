@@ -1,0 +1,45 @@
+.contact
+{
+    background-image: linear-gradient(to right, rgba(58, 66, 85,0.8) , rgba(58, 66, 85,0.8)),url(../../../img/ap.png);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:75%;
+    margin:0 auto;
+    position:relative;
+}
+.contact h4 
+{
+    color:#1CC7C1;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.contact .c{
+    font-size:30px;
+    color:#fff;
+    text-transform: capitalize;
+    font-weight:600;
+}
+.contact input,textarea
+{
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border:none;
+}
+:focus
+{
+    outline: none;
+}
+#email,
+#subject{
+    padding:13px 21px;
+    margin:18px 0;
+}
+textarea
+{
+    padding:13px 21px;
+}

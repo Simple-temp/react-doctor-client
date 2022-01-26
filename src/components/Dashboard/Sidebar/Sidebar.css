@@ -1,0 +1,35 @@
+.sidebar
+{
+    height: 100vh;
+    background-color: #1CC7C1;
+    position: fixed;
+    padding-right:80px;
+}
+.container-fluid
+{
+    padding-right: var(--bs-gutter-x,0rem);
+    padding-left: var(--bs-gutter-x,0rem);
+}
+.sidebar ul
+{
+    list-style: none;
+}
+.sidebar ul li .li
+{
+    color:#fff;
+    text-decoration: none;
+}
+.sidebar ul li i 
+{
+    color:#fff;
+}
+.sidebar ul li
+{
+    padding:9px;
+    margin-top:11px;
+
+}
+.far
+{
+    padding-right:10px;
+}

@@ -1,0 +1,25 @@
+.info-primary{
+    background-color: #1CC7C1;
+}
+.info-dark{
+    background-color: #3A4256;
+}
+.info-wrapper
+{
+    margin:5px;
+    padding:29px 0;
+    height:120px
+}
+.icon-box p 
+{
+    font-size:38px;
+    margin-right:15px;
+}
+.info-box
+{
+    padding:0 10px;
+}
+.info-box h3 
+{
+    font-size:25px;
+}

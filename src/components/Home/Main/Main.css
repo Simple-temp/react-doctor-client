@@ -1,0 +1,15 @@
+.row 
+{
+    --bs-gutter-x:0rem;
+}
+.main{
+    height:550px;
+}
+.main h1 
+{
+    color:#3A4256;
+}
+.main p 
+{
+    color:gray;
+}
