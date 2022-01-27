@@ -1,0 +1,31 @@
+.mr
+{
+    margin-right:11px;
+}
+.inner-width
+{
+    padding-right:30px;
+}
+.d-box
+{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color:#fff;
+}
+.d-box span
+{
+    margin-right:30px;
+    font-size:45px;
+    font-weight: 600;
+}
+.d-box p
+{
+    margin-top:10px;
+}
+button .fas 
+{
+    color:#fff;
+}
