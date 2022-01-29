@@ -1,47 +1,29 @@
-import React from 'react';
-import doctor from "../../../img/doctor-small.png"
+import React, { useEffect, useState } from 'react';
+import ShowDoctorList from '../ShowDoctorList/ShowDoctorList';
+import loading from "../../../img/loading.gif"
 import "./Doctors.css"
 
 const Doctors = () => {
+
+    const [doctors,setDoctors] = useState([])
+
+    useEffect(()=>{
+        fetch(`http://localhost:4000/doctorscollection`)
+        .then( res => res.json())
+        .then( data => setDoctors(data))
+    },[])
+
+
     return (
         <section className='doctors'>
             <div className='container mt-5 py-5'>
                 <h4 className='text-center'>Our Doctors</h4>
-                <div className="container mt-5 pt-5 d-flex justify-content-center w-75">
+                <div className="container mt-5 w-100">
                     <div className="row">
-                        <div className="col-lg-4 col-md-6 col-sm-12">
-                            <div className="doctor-box">
-                                <div className="doctor-head">
-                                    <img src={doctor} alt="" style={{ width: "400px", height: "auto", width: "100%", display: "block" }} />
-                                </div>
-                                <div className="doctor-body text-center mt-3">
-                                    <p>Dr. caudi</p>
-                                    <span><i class="fas fa-phone-alt"></i>+52 415 15155</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12">
-                            <div className="doctor-box">
-                                <div className="doctor-head">
-                                    <img src={doctor} alt="" style={{ width: "400px", height: "auto", width: "100%", display: "block" }} />
-                                </div>
-                                <div className="doctor-body text-center mt-3">
-                                    <p>Dr. caudi</p>
-                                    <span><i class="fas fa-phone-alt"></i>+52 415 15155</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12">
-                            <div className="doctor-box">
-                                <div className="doctor-head">
-                                    <img src={doctor} alt="" style={{ width: "400px", height: "auto", width: "100%", display: "block" }} />
-                                </div>
-                                <div className="doctor-body text-center mt-3">
-                                    <p>Dr. caudi</p>
-                                    <span><i class="fas fa-phone-alt"></i>+52 415 15155</span>
-                                </div>
-                            </div>
-                        </div>
+                        {
+                            doctors.length === 0 ? <img style={{width:'270px'}} className='mx-auto' src={loading} alt="" /> : 
+                            doctors.map( doctor => <ShowDoctorList doctors={doctor}></ShowDoctorList>)
+                        }
                     </div>
                 </div>
             </div>
