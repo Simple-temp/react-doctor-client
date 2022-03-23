@@ -6,7 +6,7 @@ const ShowDoctorList = ({ doctors }) => {
         <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="doctor-box">
                 <div className="doctor-head">
-                    <img src={`http://localhost:4000/${doctors.img}`} alt="" style={{ width: "400px",height: "400px", display: "block" }} />
+                    <img src={`https://react-doctors-client.herokuapp.com/${doctors.img}`} alt="" style={{ width: "400px",height: "400px", display: "block" }} />
                 </div>
                 <div className="doctor-body text-center mt-3">
                     <p>{doctors.title}</p>

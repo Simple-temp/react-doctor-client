@@ -8,7 +8,7 @@ const AllPatients = () => {
     const [getdata, setGetdata] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:4000/getallpatientsdata`)
+        fetch(`https://react-doctors-client.herokuapp.com/getallpatientsdata`)
             .then(res => res.json())
             .then(data => setGetdata(data))
     }, [])

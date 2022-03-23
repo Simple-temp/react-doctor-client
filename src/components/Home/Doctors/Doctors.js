@@ -8,7 +8,7 @@ const Doctors = () => {
     const [doctors,setDoctors] = useState([])
 
     useEffect(()=>{
-        fetch(`http://localhost:4000/doctorscollection`)
+        fetch(`https://react-doctors-client.herokuapp.com/doctorscollection`)
         .then( res => res.json())
         .then( data => setDoctors(data))
     },[])

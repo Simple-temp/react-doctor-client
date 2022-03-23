@@ -10,7 +10,7 @@ const Sidebar = () => {
     const [ doctor , setDoctor ] = useState(false)
 
     useEffect(() => {
-        fetch(`http://localhost:4000/isDoctor`, {
+        fetch(`https://react-doctors-client.herokuapp.com/isDoctor`, {
             method: 'POST',
             body: JSON.stringify({ email: loggedInuser.email }),
             headers: {'Content-Type': 'application/json'}

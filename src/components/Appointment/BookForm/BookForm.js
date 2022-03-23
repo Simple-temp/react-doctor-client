@@ -24,7 +24,7 @@ const BookForm = ({ modalIsOpen, closeModal, bookSubject, date }) => {
             data.BookingDate = date;
             data.createdDate = new Date()
 
-            fetch(`http://localhost:4000/postappointment`, {
+            fetch(`https://react-doctors-client.herokuapp.com/postappointment`, {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: { 'Content-type': 'application/json' }
