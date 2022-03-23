@@ -27,8 +27,8 @@ const ShowAllData = ({ getdata }) => {
                                 <td>{getdata.phone}</td>
                                 <td>{getdata.service}</td>
                                 <td>{getdata.email}</td>
-                                <td>{getdata.BookingDate}</td>
-                                <td>{getdata.createdDate}</td>
+                                <td>{new Date(getdata.BookingDate).toDateString()}</td>
+                                <td>{new Date(getdata.createdDate).toDateString()}</td>
                             </tr>
                         )
 

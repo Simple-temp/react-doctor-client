@@ -49,7 +49,7 @@ const DashboardItem = ({ getdata }) => {
                             getdata.map((getdata, index) =>
                                 <tr>
                                     <td>{index + 1}</td>
-                                    <td>{getdata.createdDate}</td>
+                                    <td>{new Date(getdata.createdDate).toDateString()}</td>
                                     <td>{getdata.name}</td>
                                     <td>{getdata.phone}</td>
                                     <td><button className='btn btn-primary'>View</button></td>
