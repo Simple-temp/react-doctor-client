@@ -1,5 +1,5 @@
 # react-doctor-client
-Technologys: react, firebase, react-bootstrap, react-router-dom, material-ui, react-calender, react-modal.<br>
+Technologys: react, firebase,react-hooks, react-bootstrap, react-router-dom, material-ui, react-calender, react-modal.<br>
 The data are dynamic and they have many page in the website.<br>
 
 1. home page
