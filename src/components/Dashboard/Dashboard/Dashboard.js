@@ -20,7 +20,7 @@ const Dashboard = () => {
 
     useEffect(()=>{
         
-        fetch(`https://react-doctors-client.herokuapp.com/postappointmentbydate`, {
+        fetch(`https://doctor-ve5p.onrender.com/postappointmentbydate`, {
             method: 'POST',
             body: JSON.stringify({ date:selected, email : loggedInuser.email }),
             headers: { 'Content-type': 'application/json' }

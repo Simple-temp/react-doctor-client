@@ -26,7 +26,7 @@ const AddNow = () => {
         formData.append('title', info.title)
         formData.append('email', info.email)
       
-        fetch('https://react-doctors-client.herokuapp.com/addAdoctor', {
+        fetch('https://doctor-ve5p.onrender.com/addAdoctor', {
           method: 'POST',
           body: formData,
         })

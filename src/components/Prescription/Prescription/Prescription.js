@@ -7,7 +7,7 @@ const Prescription = () => {
     const [getdata, setGetdata] = useState([])
 
     useEffect(() => {
-        fetch(`https://react-doctors-client.herokuapp.com/getallpatientsdata`)
+        fetch(`https://doctor-ve5p.onrender.com/getallpatientsdata`)
             .then(res => res.json())
             .then(data => setGetdata(data))
     }, [])
